@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판 프로토타입</title>
+  <link  rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <h1>게시판 예시</h1> <br>
+  <div id="root">
+    <label for="input">글 입력</label>
+    <input id=input type="text">
+    <input id=button type="button" value="작성 글 등록">
+  </div>
+
+  <script>
+    const root = document.getElementById("root");
+    const input = document.getElementById("input");
+    const button = document.getElementById("button");
+
+  
+    button.addEventListener("click", ()=>{
+      const li = document.createElement("li");
+      li.textContent = input.value;
+      root.appendChild(li);
+      input.value = ""
+    })
+  </script>
+
+</body>
+
+</html>

@@ -22,7 +22,9 @@ const server = http.createServer((req, res) => {
     });
   }else if(req.url === "./style.css" && req.method === "GET"){
     fs.readFile("./style.css", "utf8", (err, data) =>{
-      if(err){}
+      if(err){
+        serverErrorLog();
+      }
 
     });
   };

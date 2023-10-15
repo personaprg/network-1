@@ -20,6 +20,8 @@ const server = http.createServer((req, res) => {
       res.writeHead(200, {"Countent-Type": "text/html"});
       res.end(data);
     });
-  }else if(req.url === "./style.css" && req.method === "GET");
+  }else if(req.url === "./style.css" && req.method === "GET"){
+    fs.readFile("./style.css")
+  };
 
 });

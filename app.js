@@ -13,7 +13,10 @@ const server = http.createServer((req, res) => {
   //2. 요청 메서드
 
   if(req.url === "/" && req.method === "GET"){
-    fs.readFile("./index.html", "utf8", (err, data))
+    fs.readFile("./index.html", "utf8", (err, data) =>{
+
+      
+    })
 
   }
 

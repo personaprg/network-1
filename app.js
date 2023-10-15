@@ -30,5 +30,6 @@ const server = http.createServer((req, res) => {
     });
   } else {
     res.writeHead(484);
+    res.end("Not Found");
   }
 });

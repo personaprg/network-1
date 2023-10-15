@@ -18,15 +18,14 @@
     const root = document.getElementById("root");
     const input = document.getElementById("input");
     const button = document.getElementById("button");
-    
+
   
     button.addEventListener("click", ()=>{
       const li = document.createElement("li");
       li.textContent = input.value;
       root.appendChild(li);
+      input.value = ""
     })
-    
-
   </script>
 
 </body>

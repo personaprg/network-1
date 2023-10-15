@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게시판 프로토타입</title>
-  <link  rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -21,15 +21,14 @@
     const input = document.getElementById("input");
     const button = document.getElementById("button");
 
-  
-    button.addEventListener("click", ()=>{
+    button.addEventListener("click", () => {
       const li = document.createElement("li");
       li.textContent = input.value;
       root.appendChild(li);
       input.value = ""
     })
-  </script>
 
+  </script>
 </body>
 
 </html>

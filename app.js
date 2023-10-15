@@ -7,7 +7,8 @@ const server = http.createServer((req, res) => {
     res.writeHead(500);
     return res.end("서버의서 문제가 발생하였습니다.");
   }
-
+  //url은 get 방식의 대표적인 방식(get : data + url)
   console.log("요청 확인 : " +  req.url + " / req의 메소드 확인 : ", req.method);
-
+  //1. 요청 url
+  //2. 요청 메서드
 });

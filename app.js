@@ -12,8 +12,8 @@ const server = http.createServer((req, res) => {
   //1. 요청 url
   //2. 요청 메서드
 
-  if(req.url === "/"){
-    
+  if(req.url === "/" && req.method === "GEt"){
+
   }
 
 });

@@ -1,4 +1,4 @@
 const http = require("http");
 const fs = require("fs");
 
-const server
+const server = http.createServer();

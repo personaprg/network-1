@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
   if(req.url === "/" && req.method === "GET"){
     fs.readFile("./index.html", "utf8", (err, data) =>{
       if(err){
-        
+        serverErrorLog();
       }
 
     })

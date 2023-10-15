@@ -35,4 +35,5 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = 8080;
-server.listen();
+server.listen(PORT, () => {
+ });

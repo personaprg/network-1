@@ -17,7 +17,8 @@ const server = http.createServer((req, res) => {
       if(err){
         serverErrorLog();
       }
-      res.writeHead(200, {"Countent-Type": "text/html"})
+      res.writeHead(200, {"Countent-Type": "text/html"});
+      res.end(data);
 
     })
 

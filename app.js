@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
       if(err){
         serverErrorLog();
       }
-      res.writeHead(200)
+      res.writeHead(200 ,{"Content-Type" : "text/css"});
 
     });
   };

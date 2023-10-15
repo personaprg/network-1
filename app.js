@@ -36,5 +36,5 @@ const server = http.createServer((req, res) => {
 
 const PORT = 8080;
 server.listen(PORT, () => {
-  console.log(`cli 창에서 컨트롤 누르고 포트 누르면 확인 http://localhost:${PORt}/`);
+  console.log(`cli 창에서 컨트롤 누르고 포트 누르면 확인 http://localhost:${PORT}/`);
  });

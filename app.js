@@ -11,4 +11,9 @@ const server = http.createServer((req, res) => {
   console.log("요청 확인 : " +  req.url + " / req의 메소드 확인 : ", req.method);
   //1. 요청 url
   //2. 요청 메서드
+
+  if(req.url === "/"){
+    
+  }
+
 });

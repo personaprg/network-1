@@ -8,4 +8,6 @@ const server = http.createServer((req, res) => {
     return res.end("서버의서 문제가 발생하였습니다.");
   }
 
+  console.log("요청 확인");
+
 });
